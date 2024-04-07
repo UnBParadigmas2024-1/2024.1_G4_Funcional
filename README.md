@@ -24,7 +24,7 @@ Paradigmas:
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0121847  |  Helder Lourenço de Abreu Marques |
 | xx/xxxxxx  |  xxxx xxxx xxxxx |
 
 ## Sobre 
