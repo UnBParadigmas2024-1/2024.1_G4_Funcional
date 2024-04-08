@@ -13,7 +13,7 @@ Paradigmas:
  
  (Apague esses comentários)
 
-# NomeDoProjeto
+# Termo
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
 **Nro do Grupo (de acordo com a Planilha de Divisão dos Grupos)**: 04<br>
@@ -33,6 +33,9 @@ Paradigmas:
 | 20/0025791  |  Pablo Guilherme de Jesus Batista Silva |
 
 ## Sobre 
+
+Termo é uma aplicação no estilo jogo que pretende simular um jogo de advinhação que baseado em um tamanho de palavras o objetivo do "player" é tentar advinhar qual palavra é com um numero X de tentativas as quais indicam em caso de acerto (em verde) de letra ou de erro(marrom). 
+
 Descreva o seu projeto em linhas gerais. 
 Use referências, links, que permitam conhecer um pouco mais sobre o projeto.
 Capriche nessa seção, pois ela é a primeira a ser lida pelos interessados no projeto.
@@ -41,7 +44,7 @@ Capriche nessa seção, pois ela é a primeira a ser lida pelos interessados no 
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
+**Linguagens**: Haskell<br>
 **Tecnologias**: xxxxxx<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais.
