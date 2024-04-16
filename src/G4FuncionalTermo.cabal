@@ -1,0 +1,26 @@
+cabal-version:      3.0
+name:               G4FuncionalTermo
+version:            0.1.0.0
+
+
+executable termo
+    main-is: Main.hs
+    build-depends:
+        base ,
+        text,
+        containers,
+        transformers,
+        mtl,
+        pretty-terminal,
+        random,
+        array
+    hs-source-dirs:   app
+    ghc-options:
+        -Wall
+        -Wunused-packages
+        -Widentities
+        -Wincomplete-record-updates
+        -Wincomplete-uni-patterns
+        -Wpartial-fields
+        -Wredundant-constraints
+    default-language: Haskell2010
