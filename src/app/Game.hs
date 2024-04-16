@@ -3,12 +3,13 @@ module Game
     helpInstructions,
     playGame,
     getWordFromFile,
-    loop
+    loop,
+    makeAttempt
   )
 where
 
 import Control.Arrow ((&&&))
-import Control.Monad (forM_, mzero, when)
+import Control.Monad (forM_, mzero, when, unless)
 import Control.Monad.IO.Class (MonadIO, liftIO)
 import Control.Monad.ST.Strict (ST)
 import Control.Monad.State
@@ -30,6 +31,7 @@ import System.Console.Pretty
     color,
     style,
   )
+import Text.Printf (printf)
 
 introduction :: T.Text
 introduction =
@@ -101,3 +103,37 @@ playGame = do
     ":s" -> pure ()
     ":?" -> getHelpAndPrint >> continue
     _    -> liftIO (putStrLn "Invalid input!") >> playGame
+    word -> makeAttempt $ T.toUpper (T.pack word)
+
+-- atualização da função makeAttempt, utilização de when e unless pra simplificação, utilização da gets para obter multiplos valores de uma vez 
+makeAttempt :: T.Text -> Game ()
+makeAttempt word = do
+  (wordMap, answer, guesses, maxGuesses) <- gets (\s -> (_wordMap s, _answer s, _guesses s, _maxGuesses s))
+
+  unless (M.member word wordMap) $ do
+    printLnS $ T.pack "Palavra inválida, por favor tente novamente"
+    continue
+
+  let attemptResult = showAttempt word answer
+  printLnS $ renderAttempt word attemptResult
+  let updm = updateAttemptMap word attemptResult . _attemptMap
+  modify' (\s -> s {_attemptMap = updm s})
+
+  let msg = "A palavra era '" <> T.unpack (wordMap M.! answer) <> "'"
+
+  when (word == answer) $ do
+    printLnS $ T.pack ("Você ganhou! " ++ msg)
+    pure ()
+
+  when (guesses >= maxGuesses) $ do
+    printLnS $ T.pack ("Você perdeu! " ++ msg)
+    pure ()
+
+  modify (\s -> s {_guesses = _guesses s + 1})
+  continue
+
+-- Função atualizada displayattempt, redução nas multiplas chamadas da func gets para apenas 1 e utilização da função printf 
+displayAttemptNumbers :: Game ()
+displayAttemptNumbers = do
+  (currentGuess, maxGuesses) <- gets (\s -> (_guesses s, _maxGuesses s))
+  liftIO . putStr $ printf "Digite sua tentativa [%d/%d]: " currentGuess maxGuesses
