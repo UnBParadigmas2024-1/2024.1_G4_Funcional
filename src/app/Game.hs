@@ -1,9 +1,25 @@
 module Game
-  ( 
-    introduction,
-    helpInstructions
+  ( introduction,
+    helpInstructions,
+    playGame,
+    getWordFromFile,
+    loop
   )
 where
+
+import Control.Arrow ((&&&))
+import Control.Monad (forM_, mzero, when)
+import Control.Monad.IO.Class (MonadIO, liftIO)
+import Control.Monad.ST.Strict (ST)
+import Control.Monad.State
+  ( StateT,
+    evalStateT,
+    gets,
+    modify,
+    modify',
+  )
+import Control.Monad.Trans.Maybe (MaybeT, runMaybeT)
+import Utils (CharacterStatus (..), GameState (..))
 
 import qualified Data.Map.Strict as M
 import qualified Data.Text as T
@@ -44,3 +60,44 @@ helpInstructions =
     <> T.pack " P  L  U "
     <> color White (T.pack " M ")
     <> T.pack " A \nA letra M não existe na palavra.\n"
+
+loop :: (Monad m) => m (Maybe a) -> m a
+loop action = action >>= maybe (loop action) pure
+
+continue :: Game a
+continue = mzero
+
+printLnS :: (MonadIO m) => T.Text -> m ()
+printLnS = liftIO . putStrLn . T.unpack
+
+type Game a = MaybeT (StateT GameState IO) a
+
+getWordFromFile :: IO (M.Map T.Text T.Text)
+getWordFromFile = do
+  fileContent <- readFile "palavras.txt"
+  let allWords = T.lines $ T.pack fileContent
+  pure $ M.fromList $ map (T.map normalizeAccents &&& id) allWords
+  where
+    normalizeAccents 'Á' = 'A'
+    normalizeAccents 'À' = 'A'
+    normalizeAccents 'Ã' = 'A'
+    normalizeAccents 'Â' = 'A'
+    normalizeAccents 'É' = 'E'
+    normalizeAccents 'Ê' = 'E'
+    normalizeAccents 'Í' = 'I'
+    normalizeAccents 'Õ' = 'O'
+    normalizeAccents 'Ó' = 'O'
+    normalizeAccents 'Ô' = 'O'
+    normalizeAccents 'Ú' = 'U'
+    normalizeAccents 'Ç' = 'C'
+    normalizeAccents cha = cha
+
+playGame :: Game ()
+playGame = do
+  let getHelpAndPrint = printLnS helpInstructions
+
+  line <- liftIO getLine
+  case line of
+    ":s" -> pure ()
+    ":?" -> getHelpAndPrint >> continue
+    _    -> liftIO (putStrLn "Invalid input!") >> playGame
