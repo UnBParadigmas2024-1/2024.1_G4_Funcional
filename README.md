@@ -54,7 +54,7 @@ TEMPO: +/- 15min
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
-| Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa |
+| Pablo  |  Refatoração das funções makeAttempt e displayAttemptNumbers | Boa |
 
 ## Outros 
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
