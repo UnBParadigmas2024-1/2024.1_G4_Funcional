@@ -14,7 +14,7 @@ module Game
 where
 
 import Control.Arrow ((&&&))
-import Control.Monad (forM_, mzero, when)
+import Control.Monad (forM_, mzero, when, unless)
 import Control.Monad.IO.Class (MonadIO, liftIO)
 import Control.Monad.ST.Strict (ST)
 import Control.Monad.State
@@ -46,6 +46,7 @@ import System.Console.Pretty
 import System.IO (getLine, putStrLn, readFile)
 import System.Random (newStdGen, uniformR)
 import Utils (CharacterStatus (..), GameState (..))
+import Text.Printf (printf)
 
 getWordMap :: IO (M.Map T.Text T.Text)
 getWordMap = do
@@ -102,37 +103,33 @@ game = do
     ":l" -> drawAttemptMap >> continue
     word -> makeAttempt $ T.toUpper (T.pack word)
 
+-- redução das multiplas chamadas da função gets e utilização de when e unless para facilitar o entendimento do fluxo
+
 makeAttempt :: T.Text -> Game ()
 makeAttempt word = do
-  wordMap <- gets _wordMap
+  (wordMap, answer, guesses, maxGuesses) <- gets (\s -> (_wordMap s, _answer s, _guesses s, _maxGuesses s))
 
-  if M.notMember word wordMap
-    then do
-      printLnS $ T.pack "Palavra inválida, por favor tente novamente"
-      continue
-    else do
-      answer <- gets _answer
-      guesses <- gets _guesses
-      let attemptResult = showAttempt word answer
-      printLnS $ renderAttempt word attemptResult
-      let updm = updateAttemptMap word attemptResult . _attemptMap
-      modify' (\s -> s {_attemptMap = updm s})
-      maxGuesses <- gets _maxGuesses
+  unless (M.member word wordMap) $ do
+    printLnS $ T.pack "Palavra inválida, por favor tente novamente"
+    continue
 
-      let msg = "A palavra era '" <> T.unpack (wordMap M.! answer) <> "'"
+  let attemptResult = showAttempt word answer
+  printLnS $ renderAttempt word attemptResult
+  let updm = updateAttemptMap word attemptResult . _attemptMap
+  modify' (\s -> s {_attemptMap = updm s})
 
-      if word == answer
-        then do
-          printLnS $ T.pack ("Você ganhou! " ++ msg)
-          pure ()
-        else
-          if guesses >= maxGuesses
-            then do
-              printLnS $ T.pack ("Você perdeu! " ++ msg)
-              pure ()
-            else do
-              modify (\s -> s {_guesses = _guesses s + 1})
-              continue
+  let msg = "A palavra era '" <> T.unpack (wordMap M.! answer) <> "'"
+
+  when (word == answer) $ do
+    printLnS $ T.pack ("Você ganhou! " ++ msg)
+    pure ()
+
+  when (guesses >= maxGuesses) $ do
+    printLnS $ T.pack ("Você perdeu! " ++ msg)
+    pure ()
+
+  modify (\s -> s {_guesses = _guesses s + 1})
+  continue
 
 helpString :: T.Text
 helpString =
@@ -168,16 +165,11 @@ showAttemptMap amap = T.concatMap showColoredChar (T.pack letters)
     letters = "QWERTYUIOP\nASDFGHJKL\n ZXCVBNM"
     showColoredChar c = colour (M.findWithDefault Untested c amap) (showPrettyChar c)
 
+-- utilização da função printf e redução das multiplas chamadas da função gets
 displayAttemptNumbers :: Game ()
 displayAttemptNumbers = do
-  currentGuess <- gets _guesses
-  maxGuesses <- gets _maxGuesses
-  liftIO . putStr $
-    "Digite sua tentativa ["
-      <> show currentGuess
-      <> "/"
-      <> show maxGuesses
-      <> "]: "
+  (currentGuess, maxGuesses) <- gets (\s -> (_guesses s, _maxGuesses s))
+  liftIO . putStr $ printf "Digite sua tentativa [%d/%d]: " currentGuess maxGuesses
 
 showPrettyChar :: Char -> T.Text
 showPrettyChar c = T.singleton ' ' <> T.singleton c
