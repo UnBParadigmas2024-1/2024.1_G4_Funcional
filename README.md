@@ -38,7 +38,15 @@ Insira um manual ou um script para auxiliar ainda mais.
 Gifs animados e outras ilustrações são bem-vindos!
 
 ## Uso 
-Para rodar o código é necessária a intalacao do docker.
+Para rodar o código é necessária a instalação do docker.
+
+## instalando o docker
+
+[Windows](https://docs.docker.com/desktop/install/windows-install/)
+[Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+[Manjaro linux](https://manjariando.com.br/docker/)
+
+obs: verifique sua distro linux pois pode haver a necessidade de alguns passos extras ou permissões de administrador
 
 ### Vá para a pasta do game
     cd src

@@ -32,9 +32,22 @@ Insira um manual ou um script para auxiliar ainda mais.
 Gifs animados e outras ilustrações são bem-vindos!
 
 ## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+Para rodar o código é necessária a instalação do docker.
+
+## instalando o docker
+
+[Windows](https://docs.docker.com/desktop/install/windows-install/)
+[Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+[Manjaro linux](https://manjariando.com.br/docker/)
+
+obs: verifique sua distro linux pois pode haver a necessidade de alguns passos extras ou permissões de administrador
+
+### Vá para a pasta do game
+    cd src
+### Faça o build do projeto
+    make build
+### Rode o game
+    make up
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
@@ -52,6 +65,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | -- | -- | -- |
 | Helder | Documentação do pages e de organização do git | Boa |
 | Pablo  |  Refatoração das funções makeAttempt e displayAttemptNumbers | Boa |
+| Hugo  |  Pesquisa de projetos, pesquisa sobre o haskell e cabal, adequações iniciais do repositório, dockerização, elaboração do makefile, entre outros | Excelente |
 
 ## Outros 
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
@@ -61,5 +75,17 @@ Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não es
 (iV) Trabalhos Futuros.
 
 ## Fontes
-Referencie, adequadamente, as referências utilizadas.
-Indique ainda sobre fontes de leitura complementares.
+
+[Grupo 4 2023.1 termo](https://github.com/UnBParadigmas2023-1/2023.1_G4_Funcional_Termo/tree/main)
+
+[Termo by ValdsonJr](https://github.com/Valdsonjr/termo-hs/tree/main)
+
+[Documentação docker haskell](https://hub.docker.com/_/haskell/)
+
+[Haskell Doc](https://www.haskell.org/documentation/)
+
+[Linguagens de Programação Programação Funcional Haskell](http://profs.ic.uff.br/~bazilio/cursos/lp/material/ProgFuncional.pdf)
+
+[Haskell: Uma introdução à programação funcional](https://pt.annas-archive.org/md5/f4b1fae5debfb88217490caaeccb8578)
+
+[Segunda Parte do Post: Aprofundando-se em Haskell e Programação Funcional](https://blog.skill.dev/segunda-parte-do-post-aprofundando-se-em-haskell-e-programacao-funcional/)

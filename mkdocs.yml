@@ -1,4 +1,6 @@
 site_name: Termo em haskell
+site_url: ""
+use_directory_urls: false
 nav:
     - Home: index.md
     - Sobre: about.md
