@@ -36,9 +36,14 @@ Insira um manual ou um script para auxiliar ainda mais.
 Gifs animados e outras ilustrações são bem-vindos!
 
 ## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+Para rodar o código é necessária a intalacao do docker.
+
+### Vá para a pasta do game
+    cd src
+### Faça o build do projeto
+    make build
+### Rode o game
+    make up
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
