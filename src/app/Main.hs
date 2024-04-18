@@ -44,5 +44,9 @@ main =
           _guesses = 1,
           _wordMap = wordMap,
           _answer = fst $ M.elemAt ix wordMap,
-          _maxGuesses = 6
+          _maxGuesses = 6,
+          _victories =0,
+          _defeats = 0,
+          _totalGames =0
         }
+
