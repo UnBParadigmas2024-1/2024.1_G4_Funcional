@@ -8,6 +8,7 @@ import Game (game, getWordMap, introString, loop)
 import System.IO (BufferMode (NoBuffering), hSetBuffering, stdout)
 import System.Random (newStdGen, randomR)
 import Utils (CharacterStatus (..), GameState (..))
+import System.Exit (exitSuccess)
 
 main :: IO ()
 main =
@@ -49,4 +50,17 @@ main =
           _defeats = 0,
           _totalGames =0
         }
+    playAgain
 
+playAgain :: IO ()
+playAgain = do
+    putStrLn "\n\nDeseja jogar novamente? (S/N)"
+    answer <- getLine
+    case answer of
+        "S" -> main
+        "N" -> do
+            putStrLn "Jogou bem! :)"
+            exitSuccess
+        _  -> do
+            putStrLn "Por favor, digite 'S' para sim ou 'N' para nao."
+            playAgain
