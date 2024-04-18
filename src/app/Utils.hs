@@ -10,8 +10,12 @@ data GameState = GS
     _guesses :: !Int,
     _wordMap :: !(M.Map T.Text T.Text),
     _answer :: !T.Text,
-    _maxGuesses :: !Int
+    _maxGuesses :: !Int,
+    _victories :: !Int, 
+    _defeats :: !Int, 
+    _totalGames :: !Int 
   }
+
 
 data CharacterStatus
   = Untested
