@@ -105,7 +105,7 @@ TEMPO: +/- 15min
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
-| Ana Beatriz |	Criação da introdução e helpers do game estilização da docs	| Excelente |
+| Ana Beatriz |	Criação da introdução e helpers do game, estilização da docs	| Excelente |
 | Delziron Braz	| Criação da leitura de arquivo, modularização/refatoração de código, estilização da docs |	Excelente |
 | Gabriel Ferreira da Silva | Pesquisa sobre o haskell, refatorar código e criação da funcionalidade de reiniciar o jogo|	Excelente |
 | Guilherme Nishimura  | Pesquisa de projeto , documentação  e refatoração no game e na makeAttempt   | Execelente |
