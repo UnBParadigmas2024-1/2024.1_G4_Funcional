@@ -491,9 +491,31 @@
 <h2 id="requisitos">Requisitos</h2>
 <p><strong>Linguagens</strong>: Haskell<br>
 <strong>Tecnologias</strong>: Cabal e Docker<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
-Gifs animados e outras ilustrações são bem-vindos!</p>
+
+<h2 id="instalando-o-cabal">Instalando o Cabal</h2>
+
+<p>Para a instalação do cabal serão necessárias alguns pacotes como: curl e wget</p>
+
+<h3 id="atualize-o-cache-do-pacote">1- Atualize o cache do pacote</h3>
+<pre><code>sudo apt update</code></pre>
+
+<h3 id="Instale-o-curl-e-o-wget">2- Instale o curl e o wget</h3>
+<pre><code>sudo apt install curl wget</code></pre>
+<p>Esses comandos instalam o Curl e o Wget, que são ferramentas para transferência de dados via URLs.</p>
+
+<h3 id="Instale-o-compilador-C++">Instale o compilador C++</h3>
+<pre><code>sudo apt instal g++</code></pre>
+
+<h3 id="Instale-a-ferramenta-make">Instale a ferramenta make</h3>
+<pre><code>sudo apt instal make</code></pre>
+<p>Este comando instala a ferramenta make, que é um utilitário para automatizar o processo de compilação de programas.</p>
+
+<h3 id="Instale-o-GHC-e-o-Cabal-usando-ghcup">Instale o GHC e o Cabal usando ghcup</h3>
+<pre><code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh</code></pre>
+<p>Este comando baixa e executa o script de instalação do ghcup, uma ferramenta para instalar e gerenciar o GHC (Glasgow Haskell Compiler) e o Cabal.</p>
+<p>Após seguir esses passos, o Cabal deve estar instalado e pronto para uso em seu sistema. Você pode verificar a instalação do Cabal executando o comando:</p>
+<pre><code>cabal --version</code></pre>
+
 <h2 id="uso">Uso</h2>
 <p>Para rodar o código é necessária a instalação do docker.</p>
 <h2 id="instalando-o-docker">Instalando o docker</h2>
