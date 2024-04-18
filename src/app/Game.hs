@@ -118,16 +118,11 @@ makeAttempt word = do
 
   let msg = "A palavra era '" <> T.unpack (wordMap M.! answer) <> "'"
 
-  when (word == answer) $ do
-    printLnS $ T.pack ("Você ganhou! " ++ msg)
-    pure ()
-
-  when (guesses >= maxGuesses) $ do
-    printLnS $ T.pack ("Você perdeu! " ++ msg)
-    pure ()
-
-  modify (\s -> s {_guesses = _guesses s + 1})
-  continue
+  if word == answer
+    then printLnS $ T.pack ("Você ganhou! " ++ msg)
+  else if guesses >= maxGuesses
+    then printLnS $ T.pack ("Você perdeu! " ++ msg)
+    else modify (\s -> s {_guesses = _guesses s + 1}) >> continue
 
 helpString :: T.Text
 helpString =
