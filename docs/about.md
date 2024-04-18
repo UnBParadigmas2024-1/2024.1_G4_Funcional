@@ -1,6 +1,14 @@
 ## Sobre 
 
-Termo é uma aplicação no estilo jogo que pretende simular um jogo de advinhação que consiste em que o jogador tente advinhar em no maximo 6 tentativas a palavra escolhida . A palavra tem um tamanho de 5 letras em que para auxiliar o jogador ao tentar advinhar a palavra ele recebe as seguintes instruções:
+O jogo "Termo" é uma versão adaptada do clássico jogo de estratégia, projetado para simular um desafio de adivinhação de palavras. Os jogadores irão tentar decifrar uma palavra oculta dentro de um determinado número de tentativas, recebendo feedback sobre cada tentativa.
+
+### Objetivo
+
+O objetivo do jogador é adivinhar corretamente a palavra oculta dentro de um número limitado de tentativas.
+
+### Configuração do Jogo
+
+A palavra tem um tamanho de 5 letras em que para auxiliar o jogador ao tentar advinhar a palavra ele recebe as seguintes instruções:
 
 1-Caso a letra esteja em Verde 🟩 , significa que a letra se encontra na posição correta, 5 letras verdes corresponde ao acerto da palavra
 
@@ -8,7 +16,8 @@ Termo é uma aplicação no estilo jogo que pretende simular um jogo de advinha�
 
 3-Caso a letra esteja sem nenhuma das cores ,significa que essa letra nao se encontra na palavra
 
-O jogador so obtem vitoria nesse jogo quando acerta as palavras antes de acabar as tentativas .O seguinte projeto tenta similar ao jogo TERMO porém para linguagem huskel .
+O jogador so obtem vitoria nesse jogo quando acerta as palavras antes de acabar as tentativas. "Termo" oferece uma experiência desafiadora e divertida para os jogadores que desejam testar suas habilidades de dedução e raciocínio enquanto tentam decifrar palavras ocultas. O seguinte projeto tenta similar ao jogo TERMO porém para linguagem huskel .
+
 
 ### Tela inicial do original
 
