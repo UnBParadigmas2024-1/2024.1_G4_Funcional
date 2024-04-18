@@ -74,9 +74,9 @@ Após seguir esses passos, o Cabal deve estar instalado e pronto para uso em seu
 
 ### instalando o docker
 
-[Windows](https://docs.docker.com/desktop/install/windows-install/)
-[Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-[Manjaro linux](https://manjariando.com.br/docker/)
+[Windows](https://docs.docker.com/desktop/install/windows-install/) <br>
+[Ubuntu](https://docs.docker.com/engine/install/ubuntu/)<br>
+[Manjaro linux](https://manjariando.com.br/docker/)<br>
 
 obs: verifique sua distro linux pois pode haver a necessidade de alguns passos extras ou permissões de administrador
 
@@ -110,7 +110,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | Mateus de Almeida Dias |	Pesquisa sobre o haskell e cabal, atualização de documentação |	Excelente |
 | Helder Lourenço |	Criação da documentação, atualização do docker | Excelente |
 | Hugo  |  Pesquisa de projetos, pesquisa sobre o haskell e cabal, adequações iniciais do repositório, dockerização, elaboração do makefile, entre outros | Excelente |
-| Pablo  |  Refatoração das funções makeAttempt e displayAttemptNumbers | Boa |
+| Pablo  |  Refatoração das funções makeAttempt e displayAttemptNumbers | Execelente |
 
 
 ## Outros 
