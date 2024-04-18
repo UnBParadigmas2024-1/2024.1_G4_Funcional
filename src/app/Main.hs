@@ -6,7 +6,7 @@ import qualified Data.Text as T
 import qualified Data.Text.IO as T
 import Game (game, getWordMap, introString, loop)
 import System.IO (BufferMode (NoBuffering), hSetBuffering, stdout)
-import System.Random (mkStdGen, randomR)
+import System.Random (newStdGen, randomR)
 import Utils (CharacterStatus (..), GameState (..))
 
 main :: IO ()
@@ -14,12 +14,17 @@ main =
   do
     hSetBuffering stdout NoBuffering
 
-    wordMap <- getWordMap
+    fileContent <- T.readFile "palavras.txt"
+    let allWords = map T.stripEnd $ T.lines fileContent
+    print allWords
+    let wordMap = getWordMap allWords
+    gen <- newStdGen
+    let ix = fst $ randomR (0, length allWords - 1) gen
 
-    let gen = mkStdGen 42
-        ix = fst $ randomR (0, length wordMap - 1) gen
 
     when (ix < 0) $ error "Lista de palavras não encontrada"
+
+    let printColoredLn = T.putStrLn . T.pack
 
     T.putStrLn $ T.pack "\ESC[92m████████╗\ESC[0m███████╗\ESC[91m██████╗ \ESC[92m███╗   ███╗ \ESC[0m██████╗ "
     T.putStrLn $ T.pack "\ESC[92m╚══██╔══╝\ESC[0m██╔════╝\ESC[91m██╔══██╗\ESC[92m████╗ ████║\ESC[0m██╔═══██╗"

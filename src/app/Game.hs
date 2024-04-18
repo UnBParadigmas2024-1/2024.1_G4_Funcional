@@ -48,11 +48,8 @@ import System.Random (newStdGen, uniformR)
 import Utils (CharacterStatus (..), GameState (..))
 import Text.Printf (printf)
 
-getWordMap :: IO (M.Map T.Text T.Text)
-getWordMap = do
-  fileContent <- readFile "palavras.txt"
-  let allWords = T.lines $ T.pack fileContent
-  pure $ M.fromList $ map (T.map normalizeAccents &&& id) allWords
+getWordMap :: [T.Text] -> M.Map T.Text T.Text
+getWordMap allWords = M.fromList $ map (T.map normalizeAccents &&& removeNewline) allWords
   where
     normalizeAccents 'Á' = 'A'
     normalizeAccents 'À' = 'A'
@@ -67,6 +64,7 @@ getWordMap = do
     normalizeAccents 'Ú' = 'U'
     normalizeAccents 'Ç' = 'C'
     normalizeAccents cha = cha
+    removeNewline = T.filter (/= '\r')
 
 introString :: T.Text
 introString =
