@@ -44,20 +44,19 @@ O jogador so obtem vitoria nesse jogo quando acerta as palavras antes de acabar 
 **Tecnologias**: Cabal<br>
 Docker
 
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
-Gifs animados e outras ilustrações são bem-vindos!
 
-## Uso 
-Para rodar o código é necessária a instalação do docker.
 
-## instalando o docker
+### instalando o docker
 
 [Windows](https://docs.docker.com/desktop/install/windows-install/)
 [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 [Manjaro linux](https://manjariando.com.br/docker/)
 
 obs: verifique sua distro linux pois pode haver a necessidade de alguns passos extras ou permissões de administrador
+
+
+## Uso 
+Para rodar o código é necessária a instalação do docker.
 
 ### Vá para a pasta do game
     cd src
@@ -105,3 +104,5 @@ Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não es
 [Haskell: Uma introdução à programação funcional](https://pt.annas-archive.org/md5/f4b1fae5debfb88217490caaeccb8578)
 
 [Segunda Parte do Post: Aprofundando-se em Haskell e Programação Funcional](https://blog.skill.dev/segunda-parte-do-post-aprofundando-se-em-haskell-e-programacao-funcional/)
+
+[Termo](https://term.ooo/)
