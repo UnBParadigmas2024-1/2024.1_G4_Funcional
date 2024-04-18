@@ -108,6 +108,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | Ana Beatriz |	Criação da introdução e helpers do game estilização da docs	| Excelente |
 | Delziron Braz	| Criação da leitura de arquivo, modularização/refatoração de código, estilização da docs |	Excelente |
 | Mateus de Almeida Dias |	Pesquisa sobre o haskell e cabal, atualização de documentação |	Excelente |
+| Guilherme Nishimura  | Pesquisa de projeto , documentação  e refatoração no game e na makeAttempt   | Execelente |
 | Helder Lourenço |	Criação da documentação, atualização do docker | Excelente |
 | Hugo  |  Pesquisa de projetos, pesquisa sobre o haskell e cabal, adequações iniciais do repositório, dockerização, elaboração do makefile, entre outros | Excelente |
 | Pablo  |  Refatoração das funções makeAttempt e displayAttemptNumbers | Execelente |
