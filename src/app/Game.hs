@@ -101,11 +101,15 @@ game = do
     ":l" -> drawAttemptMap >> continue
     word -> makeAttempt $ T.toUpper (T.pack word)
 
+ 
+  (victories, defeats, totalGames) <- gets (\s -> (_victories s, _defeats s, _totalGames s))
+  printLnS $ T.pack $ printf "Vitórias: %d, Derrotas: %d, Partidas: %d" victories defeats totalGames
+
 -- redução das multiplas chamadas da função gets e utilização de when e unless para facilitar o entendimento do fluxo
 
 makeAttempt :: T.Text -> Game ()
 makeAttempt word = do
-  (wordMap, answer, guesses, maxGuesses) <- gets (\s -> (_wordMap s, _answer s, _guesses s, _maxGuesses s))
+  (wordMap, answer, guesses, maxGuesses, victories, defeats, totalGames) <- gets (\s -> (_wordMap s, _answer s, _guesses s, _maxGuesses s, _victories s, _defeats s, _totalGames s))
 
   unless (M.member word wordMap) $ do
     printLnS $ T.pack "Palavra inválida, por favor tente novamente"
@@ -119,10 +123,20 @@ makeAttempt word = do
   let msg = "A palavra era '" <> T.unpack (wordMap M.! answer) <> "'"
 
   if word == answer
-    then printLnS $ T.pack ("Você ganhou! " ++ msg)
-  else if guesses >= maxGuesses
-    then printLnS $ T.pack ("Você perdeu! " ++ msg)
-    else modify (\s -> s {_guesses = _guesses s + 1}) >> continue
+    then do
+      let updatedVictories = victories + 1
+      let updatedTotalGames = totalGames + 1
+      printLnS $ T.pack ("Você ganhou! " ++ msg)
+      modify (\s -> s {_victories = updatedVictories, _totalGames = updatedTotalGames})
+    else if guesses >= maxGuesses
+      then do
+        let updatedDefeats = defeats + 1
+        let updatedTotalGames = totalGames + 1
+        printLnS $ T.pack ("Você perdeu! " ++ msg)
+        modify (\s -> s {_defeats = updatedDefeats, _totalGames = updatedTotalGames})
+      else do
+        modify (\s -> s {_guesses = _guesses s + 1})
+        continue
 
 helpString :: T.Text
 helpString =
