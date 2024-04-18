@@ -114,12 +114,24 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | Pablo  |  Refatoração das funções makeAttempt e displayAttemptNumbers | Execelente |
 
 
-## Outros 
+## Outros
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
-(i) Lições Aprendidas;
-(ii) Percepções;
-(iii) Contribuições e Fragilidades, e
-(iV) Trabalhos Futuros.
+
+(i) Lições Aprendidas:
+
+Com este projeto, foi possível aprender a importância das linguagens funcionais, bem como o pensamento em comunidade que mantém uma linguagem ativa e operante. Suas vantagens no âmbito recursivo geram uma nova linha de pensamento e abrem novas possibilidades para soluções de problemas em um paradigma totalmente diferente do usual.
+
+(ii) Percepções:
+
+Este projeto, embora pareça simples, possui um nível de complexidade absurdo, com vários detalhes, principalmente em tipos que podem ser convertidos sem que o usuário perceba. De fato, Haskell não é uma linguagem para iniciantes; no entanto, é extremamente divertida e desafiadora. É como um quebra-cabeça capaz de testar suas capacidades e, ao mesmo tempo, proporcionar uma imensa satisfação quando tudo dá certo.
+
+(iii) Contribuições e Fragilidades:
+
+Cada membro trabalhou arduamente e colaborou significativamente com o projeto. Assim que alguém conseguia adaptar alguma parte do código, todos testavam para garantir seu funcionamento. Houve contribuições de ideias que facilitaram o desenvolvimento do projeto, como a adição do Docker para a instalação das bibliotecas e dependências necessárias.
+
+(iv) Trabalhos Futuros:
+
+Para o futuro, talvez seja interessante implementar um modo "battle royale" para competir com 100 pessoas e ver quem consegue acertar mais palavras. Além disso, explorar mais modos com palavras e tentar ampliar o dicionário para proporcionar uma sensação de maior versatilidade ao projeto.
 
 ## Fontes
 
