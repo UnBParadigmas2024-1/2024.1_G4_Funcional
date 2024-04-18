@@ -107,10 +107,11 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | -- | -- | -- |
 | Ana Beatriz |	Criação da introdução e helpers do game estilização da docs	| Excelente |
 | Delziron Braz	| Criação da leitura de arquivo, modularização/refatoração de código, estilização da docs |	Excelente |
-| Mateus de Almeida Dias |	Pesquisa sobre o haskell e cabal, atualização de documentação |	Excelente |
+| Gabriel Ferreira da Silva | Pesquisa sobre o haskell, refatorar código e criação da funcionalidade de reiniciar o jogo|	Excelente |
 | Guilherme Nishimura  | Pesquisa de projeto , documentação  e refatoração no game e na makeAttempt   | Execelente |
 | Helder Lourenço |	Criação da documentação, atualização do docker | Excelente |
 | Hugo  |  Pesquisa de projetos, pesquisa sobre o haskell e cabal, adequações iniciais do repositório, dockerização, elaboração do makefile, entre outros | Excelente |
+| Mateus de Almeida Dias |	Pesquisa sobre o haskell e cabal, atualização de documentação |	Excelente |
 | Pablo  |  Refatoração das funções makeAttempt e displayAttemptNumbers | Execelente |
 
 
@@ -123,7 +124,7 @@ Com este projeto, foi possível aprender a importância das linguagens funcionai
 
 (ii) Percepções:
 
-Este projeto, embora pareça simples, possui um nível de complexidade absurdo, com vários detalhes, principalmente em tipos que podem ser convertidos sem que o usuário perceba. De fato, Haskell não é uma linguagem para iniciantes; no entanto, é extremamente divertida e desafiadora. É como um quebra-cabeça capaz de testar suas capacidades e, ao mesmo tempo, proporcionar uma imensa satisfação quando tudo dá certo.
+Este projeto, embora pareça simples, possui um nível de complexidade absurdo, com vários detalhes, principalmente em tipos que podem ser convertidos sem que o usuário perceba. De fato, Haskell não é uma linguagem para iniciantes; no entanto, é extremamente divertida e desafiadora. É como um quebra-cabeça capaz de testar suas capacidades e, ao mesmo tempo, proporcionar uma imensa satisfação quando tudo dá certo. E com a implementação do ambiente Docker problemas que provavelmente poderiam vir de sistemas operacionais diferentes de membros e usuários, foi evitado em sua grande parte parmitindo um melhor andamento do projeto.
 
 (iii) Contribuições e Fragilidades:
 
@@ -131,7 +132,11 @@ Cada membro trabalhou arduamente e colaborou significativamente com o projeto. A
 
 (iv) Trabalhos Futuros:
 
-Para o futuro, talvez seja interessante implementar um modo "battle royale" para competir com 100 pessoas e ver quem consegue acertar mais palavras. Além disso, explorar mais modos com palavras e tentar ampliar o dicionário para proporcionar uma sensação de maior versatilidade ao projeto.
+Para o futuro, talvez seja interessante implementar os seguintes modos:
+- Ampliação do dicionário de palavras
+- Modo "Battle Royale" para competir com outras pessoas ao mesmo tempo e ver quem consegue acertar mais palavras. 
+- Implementação da interface gráfica
+- Publicação em github pages da interface gráfica
 
 ## Fontes
 
