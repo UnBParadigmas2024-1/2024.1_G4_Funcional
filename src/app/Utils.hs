@@ -3,7 +3,6 @@ module Utils (GameState (..), CharacterStatus (..)) where
 import qualified Data.Map.Strict as M
 import qualified Data.Text as T
 
-type Word = Int
 
 data GameState = GS
   { _attemptMap :: !(M.Map Char CharacterStatus),

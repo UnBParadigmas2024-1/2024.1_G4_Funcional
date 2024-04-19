@@ -18,13 +18,13 @@ import Control.Monad (forM_, mzero, when, unless)
 import Control.Monad.IO.Class (MonadIO, liftIO)
 import Control.Monad.ST.Strict (ST)
 import Control.Monad.State
-  ( StateT,
+  (
     evalStateT,
     gets,
     modify,
     modify',
   )
-import Control.Monad.Trans.Maybe (MaybeT, runMaybeT)
+import Control.Monad.Trans.Maybe (MaybeT)
 import Data.Array (Array, (!))
 import Data.Array.ST
   ( MArray (newArray),
@@ -43,8 +43,7 @@ import System.Console.Pretty
     color,
     style,
   )
-import System.IO (getLine, putStrLn, readFile)
-import System.Random (newStdGen, uniformR)
+
 import Utils (CharacterStatus (..), GameState (..))
 import Text.Printf (printf)
 
