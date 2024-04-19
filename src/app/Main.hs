@@ -17,7 +17,6 @@ main =
 
     fileContent <- T.readFile "palavras.txt"
     let allWords = map T.stripEnd $ T.lines fileContent
-    print allWords
     let wordMap = getWordMap allWords
     gen <- newStdGen
     let ix = fst $ randomR (0, length allWords - 1) gen
