@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.d451bc0e.min.css">
       
       
 
@@ -57,6 +57,9 @@
   
     <body dir="ltr">
   
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -106,9 +109,6 @@
         </div>
       </div>
     </div>
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -191,7 +191,6 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="index.html" class="md-nav__link">
         
@@ -211,7 +210,6 @@
   
   
     
-  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -256,28 +254,50 @@
       
         <li class="md-nav__item">
   <a href="#sobre" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sobre
-    </span>
+    Sobre
   </a>
   
     <nav class="md-nav" aria-label="Sobre">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracao-do-jogo" class="md-nav__link">
+    Configuração do Jogo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#tela-inicial-do-original" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tela inicial do original
-    </span>
+    Tela inicial do original
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#em-funcionamento" class="md-nav__link">
-    <span class="md-ellipsis">
-      Em funcionamento
-    </span>
+    Em funcionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tela-inicial-do-projeto" class="md-nav__link">
+    Tela inicial do  projeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projeto-em-funcionamento" class="md-nav__link">
+    Projeto em funcionamento
   </a>
   
 </li>
@@ -300,7 +320,6 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="instalacao.html" class="md-nav__link">
         
@@ -320,7 +339,6 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="resultados-finais.html" class="md-nav__link">
         
@@ -337,7 +355,6 @@
     
       
       
-  
   
   
   
@@ -381,28 +398,50 @@
       
         <li class="md-nav__item">
   <a href="#sobre" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sobre
-    </span>
+    Sobre
   </a>
   
     <nav class="md-nav" aria-label="Sobre">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    Objetivo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracao-do-jogo" class="md-nav__link">
+    Configuração do Jogo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#tela-inicial-do-original" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tela inicial do original
-    </span>
+    Tela inicial do original
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#em-funcionamento" class="md-nav__link">
-    <span class="md-ellipsis">
-      Em funcionamento
-    </span>
+    Em funcionamento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tela-inicial-do-projeto" class="md-nav__link">
+    Tela inicial do  projeto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projeto-em-funcionamento" class="md-nav__link">
+    Projeto em funcionamento
   </a>
   
 </li>
@@ -430,20 +469,23 @@
   <h1>Sobre</h1>
 
 <h2 id="sobre">Sobre</h2>
-<p>Termo é um jogo que visa tentar advinhar as palavras com um numero x de tentativas 
-dando dicas sobre quando é acertada uma letra ou quando erra.</p>
-<p>Nosso projeto visa recriar isso dentro de uma linguagem funcional como haskell por exemplo.</p>
+<p>O jogo "Termo" é uma versão adaptada do clássico jogo de estratégia, projetado para simular um desafio de adivinhação de palavras. Os jogadores irão tentar decifrar uma palavra oculta dentro de um determinado número de tentativas, recebendo feedback sobre cada tentativa.</p>
+<h3 id="objetivo">Objetivo</h3>
+<p>O objetivo do jogador é adivinhar corretamente a palavra oculta dentro de um número limitado de tentativas.</p>
+<h3 id="configuracao-do-jogo">Configuração do Jogo</h3>
+<p>A palavra tem um tamanho de 5 letras em que para auxiliar o jogador ao tentar advinhar a palavra ele recebe as seguintes instruções:</p>
+<p>1-Caso a letra esteja em Verde 🟩 , significa que a letra se encontra na posição correta, 5 letras verdes corresponde ao acerto da palavra</p>
+<p>2-Caso a letra esteja em amarelo 🟨,significa que essa letra se encontra nessa palavra porém em outra posição</p>
+<p>3-Caso a letra esteja sem nenhuma das cores ,significa que essa letra nao se encontra na palavra</p>
+<p>O jogador so obtem vitoria nesse jogo quando acerta as palavras antes de acabar as tentativas. "Termo" oferece uma experiência desafiadora e divertida para os jogadores que desejam testar suas habilidades de dedução e raciocínio enquanto tentam decifrar palavras ocultas. O seguinte projeto tenta similar ao jogo TERMO porém para linguagem huskel .</p>
 <h3 id="tela-inicial-do-original">Tela inicial do original</h3>
 <p><img alt="Termo Original" src="img/Print_Ori.png" /></p>
 <h3 id="em-funcionamento">Em funcionamento</h3>
 <p><img alt="Termo Original" src="img/Print_Game_Ori.png" /></p>
-
-
-
-
-
-
-
+<h3 id="tela-inicial-do-projeto">Tela inicial do  projeto</h3>
+<p><img alt="image" src="https://github.com/UnBParadigmas2024-1/2024.1_G4_Funcional_Termo/assets/78215376/60d4da2b-dbaa-40f4-994d-42b5e64d3711" /></p>
+<h3 id="projeto-em-funcionamento">Projeto em funcionamento</h3>
+<p><img alt="image" src="https://github.com/UnBParadigmas2024-1/2024.1_G4_Funcional_Termo/assets/78215376/27eef21b-b468-45ba-a580-15caec6e179e" /></p>
 
 
 
@@ -454,7 +496,6 @@ dando dicas sobre quando é acertada uma letra ou quando erra.</p>
             </div>
           
           
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -482,11 +523,10 @@ dando dicas sobre quando é acertada uma letra ou quando erra.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
-    
-      <script src="assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="assets/javascripts/bundle.726fbb30.min.js"></script>
       
     
   </body>
