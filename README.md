@@ -94,7 +94,7 @@ Para rodar o código é necessária a instalação do docker.
 
 ### video 1 
 
-[![Video tambem pode ser encontrado na pasta docs do projeto na pasta video](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/sNkYlL9vLyA)
+[![Video tambem pode ser encontrado na pasta docs do projeto na pasta video](https://play-lh.googleusercontent.com/HMqznNZmnuR2wmipfZUaPcqrZnkWT9xOoV7QepkuMM5F7NiMviYzqmC-IWlzwFbUew)](https://youtu.be/sNkYlL9vLyA)
 
 obs: o video também se encontra na pasta raiz do projeto em docs/video
 
