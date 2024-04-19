@@ -1,11 +1,9 @@
 # Resultados Finais
-### Vídeo 1 youtube:
-<video src="https://youtu.be/sNkYlL9vLyA.mp4" controls="controls" style="max-width: 730px;">
-</video>
+### video 1 
 
-### Vídeo 1 no repositorio:
-<video src="/docs/video/2024-04-18 22-02-47.mp4" controls="controls" style="max-width: 730px;">
-</video>
+[![Video tambem pode ser encontrado na pasta docs do projeto na pasta video](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/sNkYlL9vLyA)
+
+obs: o video também se encontra na pasta raiz do projeto em docs/video
 
 ## Outros
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
