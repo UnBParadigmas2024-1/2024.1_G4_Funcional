@@ -8,7 +8,6 @@
 |Matrícula | Aluno |
 | -- | -- |
 | 20/0060783  |  Ana Beatriz Wanderley Massuh |
-| 19/0026588  |  Davi Lima silva |
 | 20/0057421  |  Delziron Braz de Lima |
 | 20/0018060  |  Gabriel Ferreira da Silva |
 | 20/0030264  |  Guilherme Nishimura da Silva |
@@ -92,14 +91,14 @@ Para rodar o código é necessária a instalação do docker.
     make up
 
 ## Vídeo
-Adicione 1 ou mais vídeos com a execução do projeto.
-Procure: 
-(i) Introduzir o projeto;
-(ii) Mostrar passo a passo o código, explicando-o, e deixando claro o que é de terceiros, e o que é contribuição real da equipe;
-(iii) Apresentar particularidades do Paradigma, da Linguagem, e das Tecnologias, e
-(iV) Apresentar lições aprendidas, contribuições, pendências, e ideias para trabalhos futuros.
-OBS: TODOS DEVEM PARTICIPAR, CONFERINDO PONTOS DE VISTA.
-TEMPO: +/- 15min
+
+### Vídeo 1 youtube:
+<video src="https://youtu.be/sNkYlL9vLyA" controls="controls" style="max-width: 730px;">
+</video>
+
+### Vídeo 1 no repositorio:
+<video src="/docs/video/2024-04-18 22-02-47.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 ## Participações
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.

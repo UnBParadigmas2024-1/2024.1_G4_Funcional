@@ -1,13 +1,11 @@
 # Resultados Finais
-## Vídeo
-Adicione 1 ou mais vídeos com a execução do projeto.
-Procure: 
-(i) Introduzir o projeto;
-(ii) Mostrar passo a passo o código, explicando-o, e deixando claro o que é de terceiros, e o que é contribuição real da equipe;
-(iii) Apresentar particularidades do Paradigma, da Linguagem, e das Tecnologias, e
-(iV) Apresentar lições aprendidas, contribuições, pendências, e ideias para trabalhos futuros.
-OBS: TODOS DEVEM PARTICIPAR, CONFERINDO PONTOS DE VISTA.
-TEMPO: +/- 15min
+### Vídeo 1 youtube:
+<video src="https://youtu.be/sNkYlL9vLyA.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
+### Vídeo 1 no repositorio:
+<video src="/docs/video/2024-04-18 22-02-47.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 ## Outros
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
