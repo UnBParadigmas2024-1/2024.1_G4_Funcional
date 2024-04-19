@@ -49,6 +49,6 @@ Para o futuro, talvez seja interessante implementar os seguintes modos:
 
 - Helder Lourenço: Haskell é uma terra sem lei e com dificil documentação mas como bons desbravadores digitais demos nosso melhor pra conquistar o tão sonhado aprendizado.
 
-- Hugo Rocha:
+- Hugo Rocha:Minha experiência foi interessante, pois a programação com paradigmas funcionais é totalmente diferente da convencional que aprendemos na faculdade e/ou cursos online, ela nos inspira a pensar de outra forma. Com esse projeto me deparei com vários percalços, principalmente na hora de rodar o código, muitos erros, warnings entre outros. Vi também que a utilização do docker para uma linguagem que varia muito de versão para versão é muito válida.
 
-- Matheus de Almeida: 
+- Matheus de Almeida: A minha experiência também foi desafiadora, pois em um curto período de tempo tive que aprender a stack e entender seu funcionamento pois me desafiei a desenvolver novas funcionalidade e corrigir alguns bugs que estavam presentes no código como a leitura do arquivo txt e em funções como makeAttempt, mas em um aspecto geral achei a experiência válida e proveitosa, foi ótimo trabalhar em grupo pra cumprir com mais um objetivo
