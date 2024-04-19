@@ -1,1 +1,158 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Termo","text":"<p>Disciplina: FGA0210 - PARADIGMAS DE PROGRAMA\u00c7\u00c3O - T01  Nro do Grupo (de acordo com a Planilha de Divis\u00e3o dos Grupos): 04 Paradigma: Funcional</p>"},{"location":"#participantes","title":"Participantes","text":"Matr\u00edcula Aluno 20/0060783 Ana Beatriz Wanderley Massuh 20/0057421 Delziron Braz de Lima 20/0018060 Gabriel Ferreira da Silva 20/0030264 Guilherme Nishimura da Silva 18/0121847 Helder Louren\u00e7o de Abreu Marques 18/0136925 Hugo Rocha de Moura 19/0142260 Mateus de Almeida Dias 20/0025791 Pablo Guilherme de Jesus Batista Silva"},{"location":"#referencias-bibliograficas","title":"Refer\u00eancias bibliogr\u00e1ficas","text":"<ul> <li> <p>*Grupo 4 2023.1 termo</p> </li> <li> <p>Termo by ValdsonJr</p> </li> <li> <p>Documenta\u00e7\u00e3o docker haskell</p> </li> <li> <p>Haskell Doc</p> </li> <li> <p>Linguagens de Programa\u00e7\u00e3o Programa\u00e7\u00e3o Funcional Haskell</p> </li> <li> <p>Haskell: Uma introdu\u00e7\u00e3o \u00e0 programa\u00e7\u00e3o funcional</p> </li> <li> <p>Segunda Parte do Post: Aprofundando-se em Haskell e Programa\u00e7\u00e3o Funcional</p> </li> </ul>"},{"location":"about/","title":"Sobre","text":""},{"location":"about/#sobre","title":"Sobre","text":"<p>O jogo \"Termo\" \u00e9 uma vers\u00e3o adaptada do cl\u00e1ssico jogo de estrat\u00e9gia, projetado para simular um desafio de adivinha\u00e7\u00e3o de palavras. Os jogadores ir\u00e3o tentar decifrar uma palavra oculta dentro de um determinado n\u00famero de tentativas, recebendo feedback sobre cada tentativa.</p>"},{"location":"about/#objetivo","title":"Objetivo","text":"<p>O objetivo do jogador \u00e9 adivinhar corretamente a palavra oculta dentro de um n\u00famero limitado de tentativas.</p>"},{"location":"about/#configuracao-do-jogo","title":"Configura\u00e7\u00e3o do Jogo","text":"<p>A palavra tem um tamanho de 5 letras em que para auxiliar o jogador ao tentar advinhar a palavra ele recebe as seguintes instru\u00e7\u00f5es:</p> <p>1-Caso a letra esteja em Verde \ud83d\udfe9 , significa que a letra se encontra na posi\u00e7\u00e3o correta, 5 letras verdes corresponde ao acerto da palavra</p> <p>2-Caso a letra esteja em amarelo \ud83d\udfe8,significa que essa letra se encontra nessa palavra por\u00e9m em outra posi\u00e7\u00e3o</p> <p>3-Caso a letra esteja sem nenhuma das cores ,significa que essa letra nao se encontra na palavra</p> <p>O jogador so obtem vitoria nesse jogo quando acerta as palavras antes de acabar as tentativas. \"Termo\" oferece uma experi\u00eancia desafiadora e divertida para os jogadores que desejam testar suas habilidades de dedu\u00e7\u00e3o e racioc\u00ednio enquanto tentam decifrar palavras ocultas. O seguinte projeto tenta similar ao jogo TERMO por\u00e9m para linguagem huskel .</p>"},{"location":"about/#tela-inicial-do-original","title":"Tela inicial do original","text":""},{"location":"about/#em-funcionamento","title":"Em funcionamento","text":""},{"location":"about/#tela-inicial-do-projeto","title":"Tela inicial do  projeto","text":""},{"location":"about/#projeto-em-funcionamento","title":"Projeto em funcionamento","text":""},{"location":"instalacao/","title":"Instala\u00e7\u00e3o","text":""},{"location":"instalacao/#instalacao","title":"Instala\u00e7\u00e3o","text":"<p>Linguagens: Haskell Tecnologias: Cabal Docker</p>"},{"location":"instalacao/#instalando-o-cabal","title":"Instalando o Cabal","text":"<p>Para a instala\u00e7\u00e3o do cabal ser\u00e3o necess\u00e1rias alguns pacotes como: curl e wget</p>"},{"location":"instalacao/#1-atualize-o-cache-do-pacote","title":"1- Atualize o cache do pacote","text":"<p><code>sudo apt update</code></p>"},{"location":"instalacao/#2-instale-o-curl-e-o-wget","title":"2- Instale o curl e o wget","text":"<p><code>sudo apt install curl wget</code></p> <p>Esses comandos instalam o Curl e o Wget, que s\u00e3o ferramentas para transfer\u00eancia de dados via URLs.</p>"},{"location":"instalacao/#3-instale-o-compilador-c","title":"3- Instale o compilador C++","text":"<p><code>sudo apt instal g++</code></p>"},{"location":"instalacao/#4-instale-a-ferramenta-make","title":"4- Instale a ferramenta make","text":"<p><code>sudo apt instal make</code></p> <p>Este comando instala a ferramenta make, que \u00e9 um utilit\u00e1rio para automatizar o processo de compila\u00e7\u00e3o de programas.</p>"},{"location":"instalacao/#5-instale-o-ghc-e-o-cabal-usando-ghcup","title":"5- Instale o GHC e o Cabal usando ghcup","text":"<p><code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh</code></p> <p>Este comando baixa e executa o script de instala\u00e7\u00e3o do ghcup, uma ferramenta para instalar e gerenciar o GHC (Glasgow Haskell Compiler) e o Cabal.</p> <p>Ap\u00f3s seguir esses passos, o Cabal deve estar instalado e pronto para uso em seu sistema. Voc\u00ea pode verificar a instala\u00e7\u00e3o do Cabal executando o comando:</p> <p><code>cabal --version</code></p>"},{"location":"instalacao/#instalando-o-docker","title":"instalando o docker","text":"<p>Windows Ubuntu Manjaro linux</p> <p>obs: verifique sua distro linux pois pode haver a necessidade de alguns passos extras ou permiss\u00f5es de administrador</p>"},{"location":"instalacao/#uso","title":"Uso","text":"<p>Para rodar o c\u00f3digo \u00e9 necess\u00e1ria a instala\u00e7\u00e3o do docker.</p>"},{"location":"instalacao/#va-para-a-pasta-do-game","title":"V\u00e1 para a pasta do game","text":"<pre><code>cd src\n</code></pre>"},{"location":"instalacao/#faca-o-build-do-projeto","title":"Fa\u00e7a o build do projeto","text":"<pre><code>make build\n</code></pre>"},{"location":"instalacao/#rode-o-game","title":"Rode o game","text":"<pre><code>make up\n</code></pre>"},{"location":"participacoes/","title":"Participa\u00e7\u00f5es","text":"<p>Breve relato sobre as participa\u00e7\u00f5es/contribui\u00e7\u00f5es de cada membro \u00e0 entrega.</p>"},{"location":"participacoes/#contribuicoes-por-participante","title":"Contribui\u00e7\u00f5es por participante","text":"Respons\u00e1vel Contribui\u00e7\u00e3o Signific\u00e2ncia da Contribui\u00e7\u00e3o Ana Beatriz Cria\u00e7\u00e3o da introdu\u00e7\u00e3o e helpers do game estiliza\u00e7\u00e3o da docs Excelente Delziron Braz Cria\u00e7\u00e3o da leitura de arquivo, modulariza\u00e7\u00e3o/refatora\u00e7\u00e3o de c\u00f3digo, estiliza\u00e7\u00e3o da docs Excelente Gabriel Ferreira Pesquisa sobre o haskell, refatorar c\u00f3digo e cria\u00e7\u00e3o da funcionalidade de reiniciar o jogo Excelente Guilherme Nishimura Pesquisa de projeto , documenta\u00e7\u00e3o  e refatora\u00e7\u00e3o no game e na makeAttempt Excelente Helder Louren\u00e7o Cria\u00e7\u00e3o da documenta\u00e7\u00e3o, atualiza\u00e7\u00e3o do docker Excelente Hugo Rocha de Moura Pesquisa de projetos, pesquisa sobre o haskell e cabal, adequa\u00e7\u00f5es iniciais do reposit\u00f3rio, dockeriza\u00e7\u00e3o, elabora\u00e7\u00e3o do makefile, entre outros Excelente Mateus de Almeida Pesquisa sobre o haskell e cabal, atualiza\u00e7\u00e3o de documenta\u00e7\u00e3o Excelente Pablo Guilherme Refatora\u00e7\u00e3o das fun\u00e7\u00f5es makeAttempt e displayAttemptNumbers Excelente"},{"location":"resultados-finais/","title":"Resultados Finais","text":""},{"location":"resultados-finais/#video","title":"V\u00eddeo","text":"<p>Adicione 1 ou mais v\u00eddeos com a execu\u00e7\u00e3o do projeto. Procure:  (i) Introduzir o projeto; (ii) Mostrar passo a passo o c\u00f3digo, explicando-o, e deixando claro o que \u00e9 de terceiros, e o que \u00e9 contribui\u00e7\u00e3o real da equipe; (iii) Apresentar particularidades do Paradigma, da Linguagem, e das Tecnologias, e (iV) Apresentar li\u00e7\u00f5es aprendidas, contribui\u00e7\u00f5es, pend\u00eancias, e ideias para trabalhos futuros. OBS: TODOS DEVEM PARTICIPAR, CONFERINDO PONTOS DE VISTA. TEMPO: +/- 15min</p>"},{"location":"resultados-finais/#outros","title":"Outros","text":"<p>Quaisquer outras informa\u00e7\u00f5es sobre o projeto podem ser descritas aqui. N\u00e3o esque\u00e7a, entretanto, de informar sobre:</p> <p>(i) Li\u00e7\u00f5es Aprendidas:</p> <p>Com este projeto, foi poss\u00edvel aprender a import\u00e2ncia das linguagens funcionais, bem como o pensamento em comunidade que mant\u00e9m uma linguagem ativa e operante. Suas vantagens no \u00e2mbito recursivo geram uma nova linha de pensamento e abrem novas possibilidades para solu\u00e7\u00f5es de problemas em um paradigma totalmente diferente do usual.</p> <p>(ii) Percep\u00e7\u00f5es:</p> <p>Este projeto, embora pare\u00e7a simples, possui um n\u00edvel de complexidade absurdo, com v\u00e1rios detalhes, principalmente em tipos que podem ser convertidos sem que o usu\u00e1rio perceba. De fato, Haskell n\u00e3o \u00e9 uma linguagem para iniciantes; no entanto, \u00e9 extremamente divertida e desafiadora. \u00c9 como um quebra-cabe\u00e7a capaz de testar suas capacidades e, ao mesmo tempo, proporcionar uma imensa satisfa\u00e7\u00e3o quando tudo d\u00e1 certo. E com a implementa\u00e7\u00e3o do ambiente Docker problemas que provavelmente poderiam vir de sistemas operacionais diferentes de membros e usu\u00e1rios, foi evitado em sua grande parte parmitindo um melhor andamento do projeto.</p> <p>(iii) Contribui\u00e7\u00f5es e Fragilidades:</p> <p>Cada membro trabalhou arduamente e colaborou significativamente com o projeto. Assim que algu\u00e9m conseguia adaptar alguma parte do c\u00f3digo, todos testavam para garantir seu funcionamento. Houve contribui\u00e7\u00f5es de ideias que facilitaram o desenvolvimento do projeto, como a adi\u00e7\u00e3o do Docker para a instala\u00e7\u00e3o das bibliotecas e depend\u00eancias necess\u00e1rias.</p> <p>(iv) Trabalhos Futuros:</p> <p>Para o futuro, talvez seja interessante implementar os seguintes modos: - Amplia\u00e7\u00e3o do dicion\u00e1rio de palavras - Modo \"Battle Royale\" para competir com outras pessoas ao mesmo tempo e ver quem consegue acertar mais palavras.  - Implementa\u00e7\u00e3o da interface gr\u00e1fica - Publica\u00e7\u00e3o em github pages da interface gr\u00e1fica</p>"}]}
+{
+    "config": {
+        "lang": [
+            "en"
+        ],
+        "separator": "[\\s\\-]+",
+        "pipeline": [
+            "stopWordFilter"
+        ]
+    },
+    "docs": [
+        {
+            "location": "",
+            "title": "Termo",
+            "text": "<p>Disciplina: FGA0210 - PARADIGMAS DE PROGRAMA\u00c7\u00c3O - T01  Nro do Grupo (de acordo com a Planilha de Divis\u00e3o dos Grupos): 04 Paradigma: Funcional</p>"
+        },
+        {
+            "location": "#participantes",
+            "title": "Participantes",
+            "text": "Matr\u00edcula Aluno 20/0060783 Ana Beatriz Wanderley Massuh 20/0057421 Delziron Braz de Lima 20/0018060 Gabriel Ferreira da Silva 20/0030264 Guilherme Nishimura da Silva 18/0121847 Helder Louren\u00e7o de Abreu Marques 18/0136925 Hugo Rocha de Moura 19/0142260 Mateus de Almeida Dias 20/0025791 Pablo Guilherme de Jesus Batista Silva"
+        },
+        {
+            "location": "#referencias-bibliograficas",
+            "title": "Refer\u00eancias bibliogr\u00e1ficas",
+            "text": "<ul> <li> <p>*Grupo 4 2023.1 termo</p> </li> <li> <p>Termo by ValdsonJr</p> </li> <li> <p>Documenta\u00e7\u00e3o docker haskell</p> </li> <li> <p>Haskell Doc</p> </li> <li> <p>Linguagens de Programa\u00e7\u00e3o Programa\u00e7\u00e3o Funcional Haskell</p> </li> <li> <p>Haskell: Uma introdu\u00e7\u00e3o \u00e0 programa\u00e7\u00e3o funcional</p> </li> <li> <p>Segunda Parte do Post: Aprofundando-se em Haskell e Programa\u00e7\u00e3o Funcional</p> </li> </ul>"
+        },
+        {
+            "location": "about/",
+            "title": "Sobre",
+            "text": ""
+        },
+        {
+            "location": "about/#sobre",
+            "title": "Sobre",
+            "text": "<p>O jogo \"Termo\" \u00e9 uma vers\u00e3o adaptada do cl\u00e1ssico jogo de estrat\u00e9gia, projetado para simular um desafio de adivinha\u00e7\u00e3o de palavras. Os jogadores ir\u00e3o tentar decifrar uma palavra oculta dentro de um determinado n\u00famero de tentativas, recebendo feedback sobre cada tentativa.</p>"
+        },
+        {
+            "location": "about/#objetivo",
+            "title": "Objetivo",
+            "text": "<p>O objetivo do jogador \u00e9 adivinhar corretamente a palavra oculta dentro de um n\u00famero limitado de tentativas.</p>"
+        },
+        {
+            "location": "about/#configuracao-do-jogo",
+            "title": "Configura\u00e7\u00e3o do Jogo",
+            "text": "<p>A palavra tem um tamanho de 5 letras em que para auxiliar o jogador ao tentar advinhar a palavra ele recebe as seguintes instru\u00e7\u00f5es:</p> <p>1-Caso a letra esteja em Verde \ud83d\udfe9 , significa que a letra se encontra na posi\u00e7\u00e3o correta, 5 letras verdes corresponde ao acerto da palavra</p> <p>2-Caso a letra esteja em amarelo \ud83d\udfe8,significa que essa letra se encontra nessa palavra por\u00e9m em outra posi\u00e7\u00e3o</p> <p>3-Caso a letra esteja sem nenhuma das cores ,significa que essa letra nao se encontra na palavra</p> <p>O jogador so obtem vitoria nesse jogo quando acerta as palavras antes de acabar as tentativas. \"Termo\" oferece uma experi\u00eancia desafiadora e divertida para os jogadores que desejam testar suas habilidades de dedu\u00e7\u00e3o e racioc\u00ednio enquanto tentam decifrar palavras ocultas. O seguinte projeto tenta similar ao jogo TERMO por\u00e9m para linguagem huskel .</p>"
+        },
+        {
+            "location": "about/#tela-inicial-do-original",
+            "title": "Tela inicial do original",
+            "text": ""
+        },
+        {
+            "location": "about/#em-funcionamento",
+            "title": "Em funcionamento",
+            "text": ""
+        },
+        {
+            "location": "about/#tela-inicial-do-projeto",
+            "title": "Tela inicial do  projeto",
+            "text": ""
+        },
+        {
+            "location": "about/#projeto-em-funcionamento",
+            "title": "Projeto em funcionamento",
+            "text": ""
+        },
+        {
+            "location": "instalacao/",
+            "title": "Instala\u00e7\u00e3o",
+            "text": ""
+        },
+        {
+            "location": "instalacao/#instalacao",
+            "title": "Instala\u00e7\u00e3o",
+            "text": "<p>Linguagens: Haskell Tecnologias: Cabal Docker</p>"
+        },
+        {
+            "location": "instalacao/#instalando-o-cabal",
+            "title": "Instalando o Cabal",
+            "text": "<p>Para a instala\u00e7\u00e3o do cabal ser\u00e3o necess\u00e1rias alguns pacotes como: curl e wget</p>"
+        },
+        {
+            "location": "instalacao/#1-atualize-o-cache-do-pacote",
+            "title": "1- Atualize o cache do pacote",
+            "text": "<p><code>sudo apt update</code></p>"
+        },
+        {
+            "location": "instalacao/#2-instale-o-curl-e-o-wget",
+            "title": "2- Instale o curl e o wget",
+            "text": "<p><code>sudo apt install curl wget</code></p> <p>Esses comandos instalam o Curl e o Wget, que s\u00e3o ferramentas para transfer\u00eancia de dados via URLs.</p>"
+        },
+        {
+            "location": "instalacao/#3-instale-o-compilador-c",
+            "title": "3- Instale o compilador C++",
+            "text": "<p><code>sudo apt instal g++</code></p>"
+        },
+        {
+            "location": "instalacao/#4-instale-a-ferramenta-make",
+            "title": "4- Instale a ferramenta make",
+            "text": "<p><code>sudo apt instal make</code></p> <p>Este comando instala a ferramenta make, que \u00e9 um utilit\u00e1rio para automatizar o processo de compila\u00e7\u00e3o de programas.</p>"
+        },
+        {
+            "location": "instalacao/#5-instale-o-ghc-e-o-cabal-usando-ghcup",
+            "title": "5- Instale o GHC e o Cabal usando ghcup",
+            "text": "<p><code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh</code></p> <p>Este comando baixa e executa o script de instala\u00e7\u00e3o do ghcup, uma ferramenta para instalar e gerenciar o GHC (Glasgow Haskell Compiler) e o Cabal.</p> <p>Ap\u00f3s seguir esses passos, o Cabal deve estar instalado e pronto para uso em seu sistema. Voc\u00ea pode verificar a instala\u00e7\u00e3o do Cabal executando o comando:</p> <p><code>cabal --version</code></p>"
+        },
+        {
+            "location": "instalacao/#instalando-o-docker",
+            "title": "instalando o docker",
+            "text": "<p>Windows Ubuntu Manjaro linux</p> <p>obs: verifique sua distro linux pois pode haver a necessidade de alguns passos extras ou permiss\u00f5es de administrador</p>"
+        },
+        {
+            "location": "instalacao/#uso",
+            "title": "Uso",
+            "text": "<p>Para rodar o c\u00f3digo \u00e9 necess\u00e1ria a instala\u00e7\u00e3o do docker.</p>"
+        },
+        {
+            "location": "instalacao/#va-para-a-pasta-do-game",
+            "title": "V\u00e1 para a pasta do game",
+            "text": "<pre><code>cd src\n</code></pre>"
+        },
+        {
+            "location": "instalacao/#faca-o-build-do-projeto",
+            "title": "Fa\u00e7a o build do projeto",
+            "text": "<pre><code>make build\n</code></pre>"
+        },
+        {
+            "location": "instalacao/#rode-o-game",
+            "title": "Rode o game",
+            "text": "<pre><code>make up\n</code></pre>"
+        },
+        {
+            "location": "participacoes/",
+            "title": "Participa\u00e7\u00f5es",
+            "text": "<p>Breve relato sobre as participa\u00e7\u00f5es/contribui\u00e7\u00f5es de cada membro \u00e0 entrega.</p>"
+        },
+        {
+            "location": "participacoes/#contribuicoes-por-participante",
+            "title": "Contribui\u00e7\u00f5es por participante",
+            "text": "Respons\u00e1vel Contribui\u00e7\u00e3o Signific\u00e2ncia da Contribui\u00e7\u00e3o Ana Beatriz Cria\u00e7\u00e3o da introdu\u00e7\u00e3o e helpers do game estiliza\u00e7\u00e3o da docs Excelente Delziron Braz Cria\u00e7\u00e3o da leitura de arquivo, modulariza\u00e7\u00e3o/refatora\u00e7\u00e3o de c\u00f3digo, estiliza\u00e7\u00e3o da docs Excelente Gabriel Ferreira Pesquisa sobre o haskell, refatorar c\u00f3digo e cria\u00e7\u00e3o da funcionalidade de reiniciar o jogo Excelente Guilherme Nishimura Pesquisa de projeto , documenta\u00e7\u00e3o  e refatora\u00e7\u00e3o no game e na makeAttempt Excelente Helder Louren\u00e7o Cria\u00e7\u00e3o da documenta\u00e7\u00e3o, atualiza\u00e7\u00e3o do docker Excelente Hugo Rocha de Moura Pesquisa de projetos, pesquisa sobre o haskell e cabal, adequa\u00e7\u00f5es iniciais do reposit\u00f3rio, dockeriza\u00e7\u00e3o, elabora\u00e7\u00e3o do makefile, entre outros Excelente Mateus de Almeida Pesquisa sobre o haskell e cabal, atualiza\u00e7\u00e3o de documenta\u00e7\u00e3o Excelente Pablo Guilherme Refatora\u00e7\u00e3o das fun\u00e7\u00f5es makeAttempt e displayAttemptNumbers Excelente"
+        },
+        {
+            "location": "resultados-finais/",
+            "title": "Resultados Finais",
+            "text": ""
+        },
+        {
+            "location": "resultados-finais/#video",
+            "title": "V\u00eddeo",
+            "text": "<p>Adicione 1 ou mais v\u00eddeos com a execu\u00e7\u00e3o do projeto. Procure:  (i) Introduzir o projeto; (ii) Mostrar passo a passo o c\u00f3digo, explicando-o, e deixando claro o que \u00e9 de terceiros, e o que \u00e9 contribui\u00e7\u00e3o real da equipe; (iii) Apresentar particularidades do Paradigma, da Linguagem, e das Tecnologias, e (iV) Apresentar li\u00e7\u00f5es aprendidas, contribui\u00e7\u00f5es, pend\u00eancias, e ideias para trabalhos futuros. OBS: TODOS DEVEM PARTICIPAR, CONFERINDO PONTOS DE VISTA. TEMPO: +/- 15min</p>"
+        },
+        {
+            "location": "resultados-finais/#outros",
+            "title": "Outros",
+            "text": "<p>Quaisquer outras informa\u00e7\u00f5es sobre o projeto podem ser descritas aqui. N\u00e3o esque\u00e7a, entretanto, de informar sobre:</p> <p>(i) Li\u00e7\u00f5es Aprendidas:</p> <p>Com este projeto, foi poss\u00edvel aprender a import\u00e2ncia das linguagens funcionais, bem como o pensamento em comunidade que mant\u00e9m uma linguagem ativa e operante. Suas vantagens no \u00e2mbito recursivo geram uma nova linha de pensamento e abrem novas possibilidades para solu\u00e7\u00f5es de problemas em um paradigma totalmente diferente do usual.</p> <p>(ii) Percep\u00e7\u00f5es:</p> <p>Este projeto, embora pare\u00e7a simples, possui um n\u00edvel de complexidade absurdo, com v\u00e1rios detalhes, principalmente em tipos que podem ser convertidos sem que o usu\u00e1rio perceba. De fato, Haskell n\u00e3o \u00e9 uma linguagem para iniciantes; no entanto, \u00e9 extremamente divertida e desafiadora. \u00c9 como um quebra-cabe\u00e7a capaz de testar suas capacidades e, ao mesmo tempo, proporcionar uma imensa satisfa\u00e7\u00e3o quando tudo d\u00e1 certo. E com a implementa\u00e7\u00e3o do ambiente Docker problemas que provavelmente poderiam vir de sistemas operacionais diferentes de membros e usu\u00e1rios, foi evitado em sua grande parte parmitindo um melhor andamento do projeto.</p> <p>(iii) Contribui\u00e7\u00f5es e Fragilidades:</p> <p>Cada membro trabalhou arduamente e colaborou significativamente com o projeto. Assim que algu\u00e9m conseguia adaptar alguma parte do c\u00f3digo, todos testavam para garantir seu funcionamento. Houve contribui\u00e7\u00f5es de ideias que facilitaram o desenvolvimento do projeto, como a adi\u00e7\u00e3o do Docker para a instala\u00e7\u00e3o das bibliotecas e depend\u00eancias necess\u00e1rias.</p> <p>(iv) Trabalhos Futuros:</p> <p>Para o futuro, talvez seja interessante implementar os seguintes modos: - Amplia\u00e7\u00e3o do dicion\u00e1rio de palavras - Modo \"Battle Royale\" para competir com outras pessoas ao mesmo tempo e ver quem consegue acertar mais palavras.  - Implementa\u00e7\u00e3o da interface gr\u00e1fica - Publica\u00e7\u00e3o em github pages da interface gr\u00e1fica</p>"
+        }
+    ]
+}
