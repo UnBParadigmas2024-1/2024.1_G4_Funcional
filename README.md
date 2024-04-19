@@ -92,11 +92,15 @@ Para rodar o código é necessária a instalação do docker.
 
 ## Vídeo
 
-### video 1 
+### Vídeo 1:
 
 [![Video tambem pode ser encontrado na pasta docs do projeto na pasta video](https://play-lh.googleusercontent.com/HMqznNZmnuR2wmipfZUaPcqrZnkWT9xOoV7QepkuMM5F7NiMviYzqmC-IWlzwFbUew)](https://youtu.be/sNkYlL9vLyA)
 
-obs: o video também se encontra na pasta raiz do projeto em docs/video
+### Vídeo 2:
+
+[![Video tambem pode ser encontrado na pasta docs do projeto na pasta video](https://play-lh.googleusercontent.com/HMqznNZmnuR2wmipfZUaPcqrZnkWT9xOoV7QepkuMM5F7NiMviYzqmC-IWlzwFbUew)](https://youtu.be/ZtRFppG7BmQ)
+
+obs: os videos também se encontra na pasta raiz do projeto em docs/video
 
 ## Participações
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.

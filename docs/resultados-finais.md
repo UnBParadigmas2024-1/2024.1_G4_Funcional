@@ -1,9 +1,16 @@
 # Resultados Finais
-### video 1 
 
-[![Video tambem pode ser encontrado na pasta docs do projeto na pasta video](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/sNkYlL9vLyA)
+## Video
 
-obs: o video também se encontra na pasta raiz do projeto em docs/video
+### Vídeo 1:
+
+[![Video tambem pode ser encontrado na pasta docs do projeto na pasta video](https://play-lh.googleusercontent.com/HMqznNZmnuR2wmipfZUaPcqrZnkWT9xOoV7QepkuMM5F7NiMviYzqmC-IWlzwFbUew)](https://youtu.be/sNkYlL9vLyA)
+
+### Vídeo 2:
+
+[![Video tambem pode ser encontrado na pasta docs do projeto na pasta video](https://play-lh.googleusercontent.com/HMqznNZmnuR2wmipfZUaPcqrZnkWT9xOoV7QepkuMM5F7NiMviYzqmC-IWlzwFbUew)](https://youtu.be/ZtRFppG7BmQ)
+
+obs: os videos também se encontra na pasta raiz do projeto em docs/video
 
 ## Outros
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
