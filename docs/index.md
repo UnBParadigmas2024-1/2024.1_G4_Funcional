@@ -9,7 +9,6 @@
 | Matrícula  | Aluno                                  |
 | ---------- | -------------------------------------- |
 | 20/0060783 | Ana Beatriz Wanderley Massuh           |
-| 19/0026588 | Davi Lima silva                        |
 | 20/0057421 | Delziron Braz de Lima                  |
 | 20/0018060 | Gabriel Ferreira da Silva              |
 | 20/0030264 | Guilherme Nishimura da Silva           |
